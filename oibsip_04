@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Set background color to black */
+            color: #fff; /* Set text color to white */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: #333; /* Darker background color for the container */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #f9f9f9; /* Background color for input fields */
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:active {
+            background-color: #004286;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 5px #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Gitam Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <script>
+        const users = [
+            { username: "user1", password: "password1" },
+            { username: "user2", password: "password2" },
+            { username: "user3", password: "password3" }
+        ];
+
+        function login() {
+            const username = document.getElementById("username").value.trim();
+            const password = document.getElementById("password").value;
+
+            // Condition 1: Check if username and password are not empty
+            if (!username || !password) {
+                alert("Please enter both username and password.");
+                return;
+            }
+
+            // Condition 2: Check if the username exists
+            const user = users.find(u => u.username === username);
+
+            if (!user) {
+                alert("Username does not exist. Please register first.");
+                return;
+            }
+
+            // Condition 3: Check if the password matches
+            if (user.password !== password) {
+                alert("Incorrect password. Please try again.");
+                return;
+            }
+
+            // If all conditions are met, login successful
+            alert("Login successful!");
+            // Redirect to secured page or perform further actions
+        }
+    </script>
+</body>
+</html>
