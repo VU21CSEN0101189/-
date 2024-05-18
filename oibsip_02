@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Sharma - The Cricket Legend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .center-image {
+            display: block;
+            margin: 0 auto; /* Center horizontally */
+            width: 300px; /* Adjust width */
+            height: 300px; /* Adjust height */
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rohit Sharma</h1>
+    </header>
+    <div class="container">
+        <img class="center-image" src="C:\Users\siva5\Downloads\rohit_sharma2.jpg" alt="Rohit Sharma">
+        <section>
+            <h2>About Rohit Sharma</h2>
+            <p>Rohit Sharma is one of the most talented cricketers of the modern era, known for his elegant batting style and exceptional leadership skills.</p>
+            <p>He holds several records in international cricket, including the highest individual score in One Day Internationals (ODIs), with an incredible 264 runs.</p>
+            <p>Rohit's ability to dominate bowling attacks with his effortless stroke play and strategic mindset has earned him widespread acclaim among fans and pundits alike.</p>
+        </section>
+        <section>
+            <h2>Why I Admire Rohit Sharma</h2>
+            <p>I admire Rohit Sharma not only for his cricketing prowess but also for his resilience and determination in the face of challenges.</p>
+            <p>His calm demeanor under pressure and his commitment to continuous improvement serve as an inspiration to aspiring cricketers and individuals across the globe.</p>
+            <p>Rohit's dedication to his craft and his ability to lead by example make him a true role model both on and off the field.</p>
+        </section>
+    </div>
+</body>
+</html>
